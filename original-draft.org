@@ -1,0 +1,47 @@
+#+AUTHOR: Alyaman, Abd Alkader, Khaleel
+#+TITLE: Experiment 3 Observations Draft
+  
+* Original Experiment ($Ag^+ Ba^{2+} Fe^{3+}$ Solution)
+** Testing for $Ag^+$
+   We first added 1 dropper of $HCl$ to the solution, and observed a white precipitate forming at the bottom. This signifies the potential existence of $Ag^+$.
+   We separate this precipitate into a new tube, and keep the supernatant solution in the original tube.
+   After adding Ammonia to the precipitate (in the new tube), and stirring so it dissolves, the color turns teal-like[fn:4].
+   We then added 1 dropper of $HNO_3$, the solution quickly turned white. Also there's a release of heat. There's a precipitate left.
+   This means that $Ag^+$ exists in the original mixture.
+** Testing for $Fe^{3+}$
+   We return back to the original tube, and add Ammonia. We notice the appearance of a red/orange layer on top[fn:1]. This signifies the potential existence of $Fe^{3+}$.
+   After pouring the contents of the tube on a filter directed at a new tube A, the red color is filtered and does not fall down into the tube A. Only the supernatant solution passes through the filter and into the new tube A[fn:3].
+   We put the filter on another new tube B, and added $HCl$ into it, we observed the release of smoke and the solution starts turning yellow and starts to go through the filter. The Tube gets blurry.
+   We divided this solution in tube B into 2 tubes, tube 1 and tube 2.
+*** Tube 1
+    We added 3 drops of $KSCN$, a dark red/black color appears on top, fading into the yellow at the bottom. The whole tube turns red after a while. This signifies the existence of $Fe^{3+}$.
+*** Tube 2
+    We added 1 drop of Ammonia, with no significant change[fn:2].
+    We then added Cyanide ($Ku$), and observed the solution turns dark blue after mixing/stirring, this signifies the existence of $Fe^{3+}$.
+** Testing for $Ba^{2+}$
+   We added 4 drops of Potassium Chromate to the tube A, which now contains $Ba^{2+}$. The color slowly turns light yellow with visible white in the mix. A precipitate starts forming. This signifies the existence of $Ba^{2+}$.
+** Graph/Scheme:
+   [[file:scheme.ps]]
+* Unknown 1
+** Testing for $Ag^+$
+   With $HCl$: White precipitate and yellow solution --> $AgCl$ --> presence of $Ag$.
+   We add $NH_3$ into the tube with the precipitate: No reaction observed.
+** Testing for $Fe^{3+}$
+   We add 4 droppers of $NH_3$ to the original tube (with the supernatant solution), a red precipitate forms. So $Fe^{3+}$ exists. We separate this red layer from the solution with a filter.
+** Testing for $Ba^{2+}$
+   We add $K_2CrO_4$, and observe no reaction of formation of precipitate. So Barium does not exits.
+* Unknown 3
+** Testing for $Ag^+$
+   We add 1 dropper of $HCl$ to the original solution, the solution turns yellow with no formation of a precipitate. So no $Ag$.
+** Testing for $Fe^{3+}$
+   We add 2 droppers of Ammonia, and observe a red/yellow color throughout the mixture. So $Fe^{3+}$ exists. We filter this layer into another tube.
+** Testing for $Ba^{2+}$
+   We add a few drops of Potassium Chromate to the original tube with no $Fe^{3+}$, a precipitate appears and the color turns light yellow/white. So Barium exists.
+
+* Footnotes
+[fn:4]After adding an extra dropper of Ammonia, it then turned yellow.
+
+[fn:3]Tube A now contains the rest of the original mixture, which now only contains $Ba^{2+}$. 
+[fn:2]Though the tube blurs a bit right above the solution. This probably signifies the release of heat. 
+
+[fn:1]We had to add 3 droppers of Ammonia for the layer to persist. 
