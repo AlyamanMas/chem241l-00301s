@@ -4,9 +4,9 @@ digraph html {
   og [label="2mL $\\ce\{Ag^+\}$ $Ba^\{2+\}$ $Fe^\{3+\}$ Solution"];
 
 
-  ag_p [label="$\\ce\{Ag^\{+\}(aq) + Cl^\{-\}(aq) \<=\> AgCl(s)\}$\nWhite precipitate ($AgCl$)"];
-  ag_p_amm [label="Colorless solution"];
-  ag_p_amm_nit [label="White Solution\nRelease of heat\nFormation of Precipitate"];
+  ag_p [label="White precipitate ($AgCl$) (eq1)"];
+  ag_p_amm [label="Colorless solution (eq2)"];
+  ag_p_amm_nit [label="White Solution\nRelease of heat\nFormation of Precipitate $AgCl$ (eq3)"];
   ag_x [shape="plaintext" label="$Ag^+$ exists"];
 
 
@@ -16,7 +16,7 @@ digraph html {
 
 
   sup1 [label="Yellow supernatant Solution\n$Fe^\{3+\}$ and $Ba^\{2+\}$"];
-  fe_p [label="Red precipitate $Fe(OH)_3$\nscattered throughout the mixture"];
+  fe_p [label="Red precipitate $Fe(OH)_3$ (eq4)\nscattered throughout the mixture"];
   sup2 [label="Supernatant Solution\n$Ba^\{2+\}$"];
 
   sup1 -> fe_p [label="Add 6M $NH_3$ until\ncomplete preciptation\n\nFiltration\n"];
@@ -29,11 +29,11 @@ digraph html {
 
   fe_p_1 [label="Portion 1"];
   fe_p_2 [label="Portion 2"];
-  fe_p -> fe_p_1 [label="Add 6M $HCl$\nto dissolve precipitate\n\nDivide"];
+  fe_p -> fe_p_1 [label="Add 6M $HCl$ (eq5)\nto dissolve precipitate\n\nDivide"];
   fe_p -> fe_p_2;
 
-  fe_kscn [label="Red mixture"];
-  fe_amm_cya [label="Dark blue mixture"];
+  fe_kscn [label="Red mixture (eq8)"];
+  fe_amm_cya [label="Dark blue mixture (eq6&7)"];
 
   fe_p_1 -> fe_amm_cya [label="    Add:\l    • 1 drop 6M $NH_3$\l    • 3 drops 0.1M\l      $K_4[Fe(CN)_6]$\l"];
   fe_p_2 -> fe_kscn    [label="Add 3 drops\n$KSCN$"];
@@ -43,7 +43,7 @@ digraph html {
   {fe_kscn fe_amm_cya} -> fe_x;
 
 
-  ba_sol [label="Light yellow solution\nFormation of Precipitate"];
+  ba_sol [label="Light yellow solution\nFormation of Precipitate (eq9)"];
   sup2 -> ba_sol [label="Add few drops\nof Potassium\nChromate\n($K_2CrO_4$)"];
   ba_x [label="$Ba^\{2+\}$ exists" shape="plaintext"];
   ba_sol -> ba_x;
