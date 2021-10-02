@@ -1,53 +1,56 @@
 digraph html {
   node [shape=record fontname="sans"];
   edge [fontname="sans"];
-  og [label="Ag+ Ba2+ Fe3+ Solution"];
+  og [label="2mL $Ag^+$ $Ba^\{2+\}$ $Fe^\{3+\}$ Solution"];
 
 
   ag_p [label="White precipitate (AgCl)\n"];
-  ag_p_amm [label="Teal-like solution"];
+  ag_p_amm [label="Colorless solution"];
   ag_p_amm_nit [label="White Solution\nRelease of heat\nFormation of Precipitate"];
-  ag_x [shape="plaintext" label="Ag+ exists"];
+  ag_x [shape="plaintext" label="$Ag^+$ exists"];
 
-  ag_p         -> ag_p_amm     [label="Wash with water\n  Add Ammonia (NH3)"];
-  ag_p_amm     -> ag_p_amm_nit [label="  Add Nitric Acid\nHNO3"];
+
+  ag_p         -> ag_p_amm     [label="Wash with water\nand decant\n\nAdd 6M NH3 & stir"];
+  ag_p_amm     -> ag_p_amm_nit [label="Add 6M HNO3"];
   ag_p_amm_nit -> ag_x;
 
 
-  sup1 [label="Supernatant Solution\nFe3+ and Ba2+"];
-  fe_p [label="Red/orange color/precipitate\nthroughout the mixture"];
-  sup2 [label="Supernatant Solution\nBa2+"];
+  sup1 [label="Yellow supernatant Solution\nFe3+ and $Ba^\{2+\}$"];
+  fe_p [label="Red precipitate Fe(OH)3\nscattered throughout the mixture"];
+  sup2 [label="Supernatant Solution\n$Ba^\{2+\}$"];
 
-  sup1 -> fe_p [label="  Ammonia (NH3)\nThen filtration"];
+  sup1 -> fe_p [label="Add 6M NH3 until\ncomplete preciptation\n\nFiltration\n"];
   sup1 -> sup2;
 
+  first [label="" shape="plaintext"];
+
+  og -> ag_p [label="Add 6M HCl\nDecant"];
+  og -> sup1;
 
   fe_p_1 [label="Portion 1"];
   fe_p_2 [label="Portion 2"];
-  fe_p -> fe_p_1 [label="divide"];
+  fe_p -> fe_p_1 [label="Add 6M HCl\nto dissolve precipitate\n\nDivide"];
   fe_p -> fe_p_2;
 
   fe_kscn [label="Red mixture"];
   fe_amm_cya [label="Dark blue mixture"];
 
-  fe_p_1 -> fe_kscn    [label="Potassium\n Thiocyanate\n(KSCN)"];
-  fe_p_2 -> fe_amm_cya [label="Ammonia\n(NH3)\n+ Potassium\n  Ferrocyanide"];
+  fe_p_1 -> fe_amm_cya [label="Add:\n• 1 drop 6M NH3\l• 3 drops 0.1M\l  K4[Fe(CN)6]\l"];
+  fe_p_2 -> fe_kscn    [label="Add 3 drops\nKSCN"];
 
   fe_x [shape="plaintext" label="Fe3+ exists"];
 
   {fe_kscn fe_amm_cya} -> fe_x;
 
 
-  ba_sol [label="Light yellow solution\nwith white in the mix\nFormation of Precipitate"];
-  sup2 -> ba_sol [label="  Potassium\n Chromate\n (K2CrO4)"];
-  ba_x [label="Ba2+ exists" shape="plaintext"];
+  ba_sol [label="Light yellow solution\nFormation of Precipitate"];
+  sup2 -> ba_sol [label="Add few drops\nof Potassium\nChromate\n(K2CrO4)"];
+  ba_x [label="$Ba^\{2+\}$ exists" shape="plaintext"];
   ba_sol -> ba_x;
 
   {rank=same ba_x fe_x ag_x}
 
 
-  og -> ag_p [label="(HCl)\nThen separation"];
-  og -> sup1;
 
 
 }
